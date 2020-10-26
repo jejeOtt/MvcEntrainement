@@ -1,0 +1,60 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Migrations\20201008141546_InitialCreate.cs" />
+    <Compile Remove="Migrations\20201008141546_InitialCreate.Designer.cs" />
+    <Compile Remove="Migrations\20201009071542_DecimalCreate.cs" />
+    <Compile Remove="Migrations\20201009071542_DecimalCreate.Designer.cs" />
+    <Compile Remove="Migrations\20201009071854_IntCreate.cs" />
+    <Compile Remove="Migrations\20201009071854_IntCreate.Designer.cs" />
+    <Compile Remove="Migrations\20201019071709_InitialUser.cs" />
+    <Compile Remove="Migrations\20201019071709_InitialUser.Designer.cs" />
+    <Compile Remove="Migrations\20201019092615_PasswordMigration.cs" />
+    <Compile Remove="Migrations\20201019092615_PasswordMigration.Designer.cs" />
+    <Compile Remove="Migrations\20201019144449_NewUser.cs" />
+    <Compile Remove="Migrations\20201019144449_NewUser.Designer.cs" />
+    <Compile Remove="Migrations\20201020082746_NewDB.cs" />
+    <Compile Remove="Migrations\20201020082746_NewDB.Designer.cs" />
+    <Compile Remove="Migrations\20201020083030_NewDB.cs" />
+    <Compile Remove="Migrations\20201020083030_NewDB.Designer.cs" />
+    <Compile Remove="Migrations\20201020083123_NewDB.cs" />
+    <Compile Remove="Migrations\20201020083123_NewDB.Designer.cs" />
+    <Compile Remove="Migrations\20201020105957_ProductForeignKeyTest.cs" />
+    <Compile Remove="Migrations\20201020105957_ProductForeignKeyTest.Designer.cs" />
+    <Compile Remove="Migrations\20201020131326_NewLine.cs" />
+    <Compile Remove="Migrations\20201020131326_NewLine.Designer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="controller.js" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\.editorconfig" Link=".editorconfig" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="8.1.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="3.1.9" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="3.1.9" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.9" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.9">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="3.1.4" />
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+    <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="6.8.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Views\LoginPage\" />
+  </ItemGroup>
+
+
+
+</Project>
